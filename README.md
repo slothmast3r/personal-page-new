@@ -1,26 +1,49 @@
-# personal-page-new
+# Personal page
 
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
-## Project setup
+This is a project of my [personal page](#). Everything about my projects 
+and achievements is included here in my website.
+
+## Table of contents 
+- [Overview](#overview)
+  - [About this project](#about-this-project)
+    - [Project setup](#project-setup)
+  - [Links](#links)
+- [Project](#project)
+  - [Installed plugins](#installed-plugins)
+  - [Components](#components)
+- [Author](#author)
+
+## Overview
+###About this project
+This website should be able to show:
+- my current or finished projects
+- different hover animations in css
+- working email form
+
+#### Project setup
 ```
 npm install
 ```
-
-### Compiles and hot-reloads for development
 ```
 npm run serve
 ```
-
-### Compiles and minifies for production
+Compiles and minifies for production
 ```
 npm run build
 ```
-
-### Lints and fixes files
+Lints and fixes files
 ```
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+###Links
+- [Code](https://github.com/slothmast3r/personal-page-new)
+- [Live website](#)
+
+## Project
+### Installed plugins
+- [sass loader](https://www.npmjs.com/package/sass-loader) 
+### Components
+
+- Introduction.vue
+  - Basic component that contains my name, title and photo 
