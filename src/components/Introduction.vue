@@ -9,15 +9,17 @@
     <div class="jobtitle-text">
       Frontend Developer
     </div>
-    <button class="secondary-personal-button">
+    <PersonalButton :button-type="'secondary'">
       Get in touch
-    </button>
+    </PersonalButton>
   </div>
 </template>
 
 <script>
+import PersonalButton from "@/components/PersonalButton";
 export default {
-  name: "Introduction"
+  name: "Introduction",
+  components: {PersonalButton}
 }
 </script>
 
