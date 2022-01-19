@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav-bar :tabs="[{name: 'XDDDDDDDDDDDDDDDDDDD', id: 1}]"></nav-bar>
+    <nav-bar :tabs="mainTabs"></nav-bar>
     <introduction></introduction>
   </div>
 </template>
@@ -14,6 +14,16 @@ export default {
   components: {
     NavBar,
     Introduction
+  },
+  data(){
+    return{
+      mainTabs : [
+          {name: 'Home', id: 'home'},
+          {name: 'Projects', id: 'projects'},
+          {name: 'About me', id: 'aboutMe'},
+          {name: 'Contact', id: 'contact'},
+      ]
+    }
   }
 }
 </script>

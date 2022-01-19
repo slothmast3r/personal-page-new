@@ -3,6 +3,7 @@
     :ref="'refButton'"
     class="hover-button"
     :class="buttonType === 'primary' ? 'primary-personal-button' : 'secondary-personal-button'"
+    @click="$emit('click')"
   >
     <div class="slot-class">
       <slot />
@@ -20,6 +21,7 @@ export default {
       default: 'primary',
     }
   },
+  emits: ['click'],
   mounted() {
     const element = this.$refs.refButton
     const spanEl = element.querySelector("span")
