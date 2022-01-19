@@ -47,3 +47,9 @@ npm run lint
 
 - Introduction.vue
   - Basic component that contains my name, title and photo 
+## Author
+  Oskar Straszyński 
+  - [Linkedin](https://www.linkedin.com/in/oskar-straszynski-6460b3124/)
+  - [Github](https://github.com/slothmast3r)
+  - [Twitter](https://twitter.com/slothmat3r)
+  - [Frontend Mentor](https://www.frontendmentor.io/profile/slothmast3r)
