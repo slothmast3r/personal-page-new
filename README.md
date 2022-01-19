@@ -14,7 +14,7 @@ and achievements is included here in my website.
 - [Author](#author)
 
 ## Overview
-###About this project
+### About this project
 This website should be able to show:
 - my current or finished projects
 - different hover animations in css
