@@ -22,7 +22,6 @@ export default {
   },
   mounted() {
     const element = this.$refs.refButton;
-    console.log(element)
     const spanEl = element.querySelector("span")
     element.addEventListener("mouseover", e => {
       spanEl.style.left = e.pageX - element.offsetLeft + "px";
