@@ -7,7 +7,7 @@
     <div class="slot-class">
       <slot />
     </div>
-    <span :ref="'refSpan'" />
+    <span />
   </button>
 </template>
 
@@ -21,7 +21,7 @@ export default {
     }
   },
   mounted() {
-    const element = this.$refs.refButton;
+    const element = this.$refs.refButton
     const spanEl = element.querySelector("span")
     element.addEventListener("mouseover", e => {
       spanEl.style.left = e.pageX - element.offsetLeft + "px";
