@@ -11,7 +11,7 @@
         Frontend Developer
       </div>
       <PersonalButton :button-type="'secondary'">
-        Get in touch
+        GET IN TOUCH
       </PersonalButton>
     </div>
     <div>

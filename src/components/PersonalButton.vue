@@ -84,7 +84,7 @@ export default {
   padding: 0.8rem 1.6rem;
   font-size: 1rem;
   border-radius: 0.5rem;
-  text-transform: uppercase;
+  //text-transform: uppercase;
   span{
     background: $white-smoke;
   }
@@ -103,7 +103,7 @@ export default {
   border: 1px solid $secondary-color;
   font-size: 1rem;
   border-radius: 0.5rem;
-  text-transform: uppercase;
+  //text-transform: uppercase;
   span{
     background: $secondary-color;
   }
