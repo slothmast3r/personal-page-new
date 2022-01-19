@@ -94,21 +94,21 @@ export default {
 }
 
 .secondary-personal-button{
-  color: $third-color;
+  color: $secondary-color;
   cursor: pointer;
   outline: inherit;
   font-weight: 700;
   background: none;
   padding: 0.8rem 1.6rem;
-  border: 1px solid $third-color;
+  border: 1px solid $secondary-color;
   font-size: 1rem;
   border-radius: 0.5rem;
   text-transform: uppercase;
   span{
-    background: $third-color;
+    background: $secondary-color;
   }
   &:hover .slot-class{
-    color: $main-color;
+    color: $white-smoke;
   }
 }
 .hover-button:hover span {

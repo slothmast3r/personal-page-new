@@ -4,7 +4,7 @@
       <nav-bar
         :tabs="mainTabs"
       />
-      <personal-button>Resume </personal-button>
+      <personal-button :button-type="'secondary'">Resume </personal-button>
     </div>
     <introduction />
   </div>
