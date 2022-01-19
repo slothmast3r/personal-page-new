@@ -51,6 +51,8 @@ export default {
     width: 500px;
     border-radius: 0 100px;
 
+    box-shadow: 40px 40px 40px rgba(#2B302F, 0.3);
+
   }
 }
 </style>
