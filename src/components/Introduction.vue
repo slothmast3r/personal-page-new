@@ -15,7 +15,11 @@
       </PersonalButton>
     </div>
     <div>
-      <img alt="My photo" src="@/assets/images/j.jpg" class="image">
+      <img
+        alt="My photo"
+        src="@/assets/images/j.jpg"
+        class="image"
+      >
     </div>
   </div>
 </template>
@@ -40,12 +44,14 @@ export default {
     font-family: 'Press Start 2P', cursive;
     font-weight: 700;
     font-size: 3rem;
+    margin: 20px 0 ;
   }
 
   .jobtitle-text {
     font-size: 2rem;
     font-weight: 700;
     opacity: 0.8;
+    margin-bottom: 40px;
   }
   .image{
     width: 500px;
