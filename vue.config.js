@@ -1,4 +1,5 @@
 module.exports = {
+    publicPath: '/personal-page-new/',
     css: {
         loaderOptions: {
             sass: {
