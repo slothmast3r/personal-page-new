@@ -43,7 +43,7 @@ $animate: all 0.2s ease-in-out;
       display: block;
       height: 2px;
       position: absolute;
-      bottom: 0;
+      bottom: -0.5rem;
       width: 100%;
       left: 0;
       background-color: $secondary-color;

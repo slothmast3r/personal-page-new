@@ -35,6 +35,8 @@ export default {
 <style scoped lang="scss">
 .introduction-wrapper {
   display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
   .welcome-text {
     font-weight: 400;
     font-size: 1.5rem;
@@ -51,13 +53,13 @@ export default {
     font-size: 2rem;
     font-weight: 700;
     opacity: 0.8;
-    margin-bottom: 40px;
+    margin-bottom: 4rem;
   }
   .image{
     width: 500px;
     border-radius: 0 100px;
 
-    box-shadow: 40px 40px 40px rgba(#2B302F, 0.3);
+    box-shadow: 4rem 4rem 4rem rgba(#2B302F, 0.3);
 
   }
 }
