@@ -18,6 +18,8 @@ export default {
 <style lang="scss">
 body{
   background: $main-color;
+  font-family: 'Rubik', sans-serif;
+  color: $white-smoke;
 }
 #app {
 
