@@ -47,6 +47,10 @@ npm run lint
 
 - Introduction.vue
   - Basic component that contains my name, title and photo 
+- Paragraph.vue
+  - Component with section name, title, description and slot to put something into
+- NavBar.vue
+  - component with Tabs with click event 
 ## Author
   Oskar Straszyński 
   - [Linkedin](https://www.linkedin.com/in/oskar-straszynski-6460b3124/)
