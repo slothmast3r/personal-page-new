@@ -36,24 +36,24 @@ export default {
 .introduction-wrapper {
   display: flex;
   justify-content: space-between;
-  margin-top: 5rem;
+  margin-top: 5em;
   .welcome-text {
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1.5em;
   }
 
   .name-text {
     font-family: 'Press Start 2P', cursive;
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 3em;
     margin: 20px 0 ;
   }
 
   .jobtitle-text {
-    font-size: 2rem;
+    font-size: 2em;
     font-weight: 700;
     opacity: 0.8;
-    margin-bottom: 4rem;
+    margin-bottom: 4em;
   }
   .image{
     width: 500px;

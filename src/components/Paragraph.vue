@@ -45,14 +45,14 @@ export default {
   .section-wrapper {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 1em;
     text-transform: uppercase;
-    font-size: 1.3rem;
+    font-size: 1.3em;
     margin: 1rem 0;
 
     .line-section {
-      width: 4rem;
-      height: 0.2rem;
+      width: 4em;
+      height: 0.2em;
       background: $secondary-color;
     }
     .section-text{
@@ -60,13 +60,13 @@ export default {
     }
   }
   .title-wrapper{
-    font-size: 2rem;
+    font-size: 2em;
     color: $white-smoke;
     margin: 1.5rem 0;
     font-weight: 700;
   }
   .description-wrapper{
-    line-height: 1.5rem;
+    line-height: 1.5em;
     opacity: 0.8;
   }
 

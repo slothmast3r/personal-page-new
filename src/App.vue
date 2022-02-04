@@ -50,7 +50,7 @@ body{
   background: $main-color;
   font-family: 'Rubik', sans-serif;
   color: $white-smoke;
-  margin: 2rem 6rem;
+  margin: 2em 6em;
   font-size: 1rem;
 }
 #app {
@@ -60,6 +60,6 @@ body{
   display: flex;
   align-items: center;
   justify-content: right;
-  gap: 3rem;
+  gap: 3em;
 }
 </style>

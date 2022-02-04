@@ -81,9 +81,9 @@ export default {
   outline: inherit;
   font-weight: 700;
   background: $secondary-color;
-  padding: 0.8rem 1.6rem;
-  font-size: 1rem;
-  border-radius: 0.5rem;
+  padding: 0.8rem 1.6em;
+  font-size: 1em;
+  border-radius: 0.5em;
   //text-transform: uppercase;
   span{
     background: $white-smoke;
@@ -99,10 +99,10 @@ export default {
   outline: inherit;
   font-weight: 700;
   background: none;
-  padding: 0.8rem 1.6rem;
+  padding: 0.8rem 1.6em;
   border: 1px solid $secondary-color;
-  font-size: 1rem;
-  border-radius: 0.5rem;
+  font-size: 1em;
+  border-radius: 0.5em;
   //text-transform: uppercase;
   span{
     background: $secondary-color;
