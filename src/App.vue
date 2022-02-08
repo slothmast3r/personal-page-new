@@ -8,28 +8,19 @@
         Resume
       </personal-button>
     </div>
-    <introduction />
-    <paragraph
-      :name-section="'What I do?'"
-      :title="'Better design, \n Better experience'"
-      :description="description"
-    />
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
 
-import Introduction from "@/components/Introduction";
 import NavBar from "@/components/NavBar";
 import PersonalButton from "@/components/PersonalButton";
-import Paragraph from "@/components/Paragraph";
 export default {
   name: 'App',
   components: {
-    Paragraph,
     PersonalButton,
     NavBar,
-    Introduction
   },
   data(){
     return{
@@ -53,6 +44,7 @@ body{
   margin: 2em 6em;
   font-size: 1rem;
 }
+
 #app {
 
 }
