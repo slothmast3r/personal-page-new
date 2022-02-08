@@ -6,14 +6,13 @@
       :title="'My recent projects'"
     />
     <div class="projects-layout">
-      <project-image :img-src="require('@/assets/images/projects/nft.png')" />
-      <project-image :img-src="require('@/assets/images/projects/commentSection.png')" />
-      <project-image :img-src="require('@/assets/images/projects/restCountries.png')" />
       <project-image
-           :img-src="require('@/assets/images/projects/qrCode.png')" />
-      <project-image
-        class="project-element"
-        :img-src="require('@/assets/images/projects/clavo.svg')"
+        v-for="project in projectsData"
+        :key="project.key"
+        :img-src="project.image"
+        :overlay-title="project.title"
+        :overlay-description="project.description"
+        :class="project.wider? 'project-element': ''"
       />
     </div>
   </div>
@@ -25,7 +24,44 @@ import Paragraph from "@/components/Paragraph";
 import ProjectImage from "@/components/ProjectImage";
 export default {
   name: "Home",
-  components: {ProjectImage, Paragraph, Introduction}
+  components: {ProjectImage, Paragraph, Introduction},
+  data(){
+    return {
+      projectsData: [
+        {
+          key: 'nft-frontend',
+          description: 'Frontendmentor.io challenge',
+          title: 'NFT Component',
+          image: require('@/assets/images/projects/nft.png')
+        },
+        {
+          key: 'comment-section',
+          description: 'Frontendmentor.io challenge',
+          title: 'Interactive Comment section',
+          image: require('@/assets/images/projects/commentSection.png')
+        },
+        {
+          key: 'rest-countries',
+          description: 'Frontendmentor.io challenge',
+          title: 'RESTFUL countries with api',
+          image: require('@/assets/images/projects/restCountries.png')
+        },
+        {
+          key: 'qr-code',
+          description: 'Frontendmentor.io challenge',
+          title: 'QR-code component',
+          image: require('@/assets/images/projects/qrCode.png')
+        },
+        {
+          key: 'clavo',
+          description: 'Simplified team member availability',
+          title: 'CLAVO',
+          image: require('@/assets/images/projects/clavo.svg'),
+          wider: true
+        },
+      ]
+    }
+  },
 }
 </script>
 
