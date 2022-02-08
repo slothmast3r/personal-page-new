@@ -2,15 +2,20 @@
   <div>
     <div class="project-image">
       <img
-        :src="require('@/assets/images/projects/nft.png')"
-        class="photo"
+        v-if="imgSrc"
+        :src="imgSrc"
+        :alt="'ProjectPhoto: ' + overlayTitle"
+        :style="{
+          width: '100%',
+          height: photoHeight * 27 + 'vw'
+        }"
       >
       <div class="overlay__hover">
         <div class="overlay__title">
-          NFT COMPONENT
+          {{ overlayTitle }}
         </div>
-        <div class="overlay__subtitle">
-          Frontendmentor.io challenge
+        <div class="overlay__description">
+          {{ overlayDescription }}
         </div>
       </div>
     </div>
@@ -19,7 +24,26 @@
 
 <script>
 export default {
-  name: "ProjectImage"
+  name: "ProjectImage",
+  props:{
+    overlayTitle:{
+      type: String,
+      default: ''
+    },
+    overlayDescription:{
+      type: String,
+      default: ''
+    },
+    photoHeight:{
+      type: Number,
+      default: 1
+    },
+    imgSrc:{
+      default: undefined,
+      type: String
+    }
+
+  },
 }
 </script>
 
@@ -27,6 +51,9 @@ export default {
 .project-image{
   position: relative;
   width: fit-content;
+  img {
+    background: white;
+  }
   &:hover .overlay__hover{
     height: 8em;
     visibility: visible;
@@ -52,10 +79,11 @@ export default {
     font-weight: 800;
     text-transform: uppercase;
   }
-  .overlay__subtitle{
+  .overlay__description{
     margin: 0.8em;
     text-transform: uppercase;
     font-size: 0.9em;
+    opacity: 0.8;
     
   }
 }
