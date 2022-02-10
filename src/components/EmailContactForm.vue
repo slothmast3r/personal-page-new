@@ -122,22 +122,16 @@ export default {
   border-radius: 1em;
   background: rgba(255, 255, 255, 0.15);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  //backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   padding: 20px;
-  width: 50%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+
 }
 form.container{
   display: flex;
   flex-direction: column;
-  width: 75%;
-  @media screen and (max-width: 700px){
-
-    width: calc(100% - 40px);
-  }
+  width: 100%;
   ::placeholder{
     font-weight: bold;
     color: #838788;
@@ -151,10 +145,10 @@ label {
   position: absolute;
   .icon{
     color: #57565c;
-    height: 1.3rem;
+    height: 1.3em;
+    left: 1em;
+    top: 0.75em;
     position: absolute;
-    left: 1.5rem;
-    top: 1.1rem;
   }
 }
 .form-group{
@@ -163,24 +157,23 @@ label {
 }
 .form-styles{
   background-color: #f2f6f8;
-  border-radius: 2rem;
+  border-radius: 2em;
   border: none;
-  width: 75%;
-  box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
-
+  box-shadow: 0 7px 5px rgba(0, 0, 0, 0.11);
   @media screen and (max-width: 700px){
 
     width: fit-content;
   }
   &.thick {
-    height: 2.3rem;
-    padding: .5rem 3.5rem;
+    height: 2.3em;
+    width: calc(100% - 7em);
+    padding: .5em 3.5em;
 
   }
   input,
   textarea {
     color: #212529;
-    font-size: 1.1rem;
+    font-size: 1.1em;
   }
   &:focus {
     background-color: #f2f6f8;
@@ -189,7 +182,8 @@ label {
   }
   &.message{
     resize: vertical;
-    padding: .5rem 1.8rem;
+    padding: .5em 1.8em;
+    width: calc(100% - 3.6em);
   }
 }
 .header{
