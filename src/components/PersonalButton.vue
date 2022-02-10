@@ -60,11 +60,9 @@ export default {
     z-index: 0;
     width: 0;
     height: 0;
-
     border-radius: 100%;
     transform: translate(-50%, -50%);
     transition: width var(--time), padding-top var(--time);
-
   }
   .slot-class{
      position: relative;
