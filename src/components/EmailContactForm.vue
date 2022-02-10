@@ -87,8 +87,8 @@ export default {
     }
   },
   methods:{
-
     sendEmail(e) {
+      e.preventDefault()
       if(this.name && this.message && this.email) {
         try {
           emailjs.sendForm('service_7tpkd37', 'template_1qw4kkm', document.getElementById('form'),
@@ -98,7 +98,6 @@ export default {
                 reply_to: this.email,
                 message: this.message
               })
-
         } catch (error) {
           console.log({error})
           //error
@@ -157,8 +156,8 @@ label {
 }
 .form-styles{
   background-color: #f2f6f8;
-  border-radius: 2em;
-  border: none;
+  border-radius: 0.25em;
+  border: 0.0625em solid rgba(black, 0);
   box-shadow: 0 0.625em 0.375em rgba(0, 0, 0, 0.11);
   &.thick {
     height: 2.3em;
@@ -173,7 +172,6 @@ label {
   }
   &:focus {
     background-color: #f2f6f8;
-    border: none;
     box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
   }
   &.message{

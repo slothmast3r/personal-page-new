@@ -3,7 +3,7 @@
     :ref="'refButton'"
     class="hover-button"
     :class="buttonType === 'primary' ? 'primary-personal-button' : 'secondary-personal-button'"
-    @click="$emit('click')"
+    @click="(e)=>$emit('click',e)"
   >
     <div class="slot-class">
       <slot />
