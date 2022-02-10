@@ -15,6 +15,19 @@
         :class="project.wider? 'project-element': ''"
       />
     </div>
+    <div>
+      <paragraph
+        :name-section="'My skills'"
+        :title="'Language & Tools'"
+      />
+    </div>
+    <div>
+      <paragraph
+        :name-section="'Contact me'"
+        :title="'Drop me a message'"
+      />
+      <email-form-contact></email-form-contact>
+    </div>
   </div>
 </template>
 
@@ -22,9 +35,10 @@
 import Introduction from "@/components/Introduction";
 import Paragraph from "@/components/Paragraph";
 import ProjectImage from "@/components/ProjectImage";
+import EmailFormContact from "@/components/EmailContactForm";
 export default {
   name: "Home",
-  components: {ProjectImage, Paragraph, Introduction},
+  components: {EmailFormContact, ProjectImage, Paragraph, Introduction},
   data(){
     return {
       projectsData: [
