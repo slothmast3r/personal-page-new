@@ -84,6 +84,7 @@ export default {
       email: '',
       name: '',
       message:'',
+      subject: '',
     }
   },
   methods:{
@@ -143,6 +144,7 @@ label {
 .d-block {
   position: absolute;
   .icon{
+    z-index: 1;
     color: #57565c;
     height: 1.3em;
     left: 1em;
@@ -155,10 +157,12 @@ label {
   width: 100%;
 }
 .form-styles{
-  background-color: #f2f6f8;
   border-radius: 0.25em;
-  border: 0.0625em solid rgba(black, 0);
-  box-shadow: 0 0.625em 0.375em rgba(0, 0, 0, 0.11);
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.2px);
+  -webkit-backdrop-filter: blur(6.2px);
+  border: 1px solid rgba(255, 255, 255, 0.97);
   &.thick {
     height: 2.3em;
     width: calc(100% - 7em);

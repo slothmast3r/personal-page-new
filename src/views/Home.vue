@@ -21,10 +21,11 @@
         :title="'Language & Tools'"
       />
     </div>
-    <div>
+    <div class="contact-layout">
       <paragraph
         :name-section="'Contact me'"
         :title="'Drop me a message'"
+        :description="'Feel free to contact me!'"
       />
       <email-form-contact></email-form-contact>
     </div>
@@ -90,5 +91,10 @@ export default {
     grid-column: 2 / -1;
 
   }
+}
+.contact-layout{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 </style>

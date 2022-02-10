@@ -48,7 +48,7 @@ export default {
     gap: 1em;
     text-transform: uppercase;
     font-size: 1.3em;
-    margin: 1rem 0;
+    margin: 0.6em 0;
 
     .line-section {
       width: 4em;
@@ -62,7 +62,8 @@ export default {
   .title-wrapper{
     font-size: 2em;
     color: $white-smoke;
-    margin: 1.5rem 0;
+    margin-top: 0.6em;
+    margin-bottom: 1.2em;
     font-weight: 700;
   }
   .description-wrapper{
