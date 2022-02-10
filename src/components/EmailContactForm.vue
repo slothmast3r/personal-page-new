@@ -152,18 +152,14 @@ label {
   }
 }
 .form-group{
-  margin: 10px 0;
+  margin: 0.75em 0;
   width: 100%;
 }
 .form-styles{
   background-color: #f2f6f8;
   border-radius: 2em;
   border: none;
-  box-shadow: 0 7px 5px rgba(0, 0, 0, 0.11);
-  @media screen and (max-width: 700px){
-
-    width: fit-content;
-  }
+  box-shadow: 0 0.625em 0.375em rgba(0, 0, 0, 0.11);
   &.thick {
     height: 2.3em;
     width: calc(100% - 7em);
