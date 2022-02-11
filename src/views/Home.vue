@@ -52,6 +52,7 @@
       <div class="logo">
         oskstr.
       </div>
+      <social-media-icons/>
     </div>
   </div>
 </template>
@@ -62,9 +63,10 @@ import Paragraph from "@/components/Paragraph";
 import ProjectImage from "@/components/ProjectImage";
 import EmailFormContact from "@/components/EmailContactForm";
 import ContactDetails from "../components/ContactDetails";
+import SocialMediaIcons from "../components/SocialMediaIcons";
 export default {
   name: "Home",
-  components: {ContactDetails, EmailFormContact, ProjectImage, Paragraph, Introduction},
+  components: {SocialMediaIcons, ContactDetails, EmailFormContact, ProjectImage, Paragraph, Introduction},
   data(){
     return {
       projectsData: [
