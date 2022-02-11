@@ -1,7 +1,7 @@
 <template>
   <svg
     class="svg-icon"
-    style="width: 2em; height: 2em;vertical-align: middle;fill: #3B0D11;overflow: hidden;"
+    style="width: 1.5em; height: 1.5em;fill: #3B0D11;overflow: hidden;"
     viewBox="0 0 1024 1024"
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
