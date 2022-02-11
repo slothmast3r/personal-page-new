@@ -57,7 +57,7 @@ export default {
     margin-bottom: 4em;
   }
   .image{
-    width: 35%;
+    width: $columnWidth;
     border-radius: 0 100px;
 
     box-shadow: 4rem 4rem 4rem rgba(#2B302F, 0.3);

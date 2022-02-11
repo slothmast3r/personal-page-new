@@ -125,7 +125,7 @@ export default {
   border: 1px solid rgba(255, 255, 255, 0.3);
   padding: 1.5em 2.5em;
   display: flex;
-  width: 35%;
+  width: $columnWidth;
   flex-direction: column;
 
 }

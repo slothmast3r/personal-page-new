@@ -124,7 +124,7 @@ export default {
   }
 }
 .left-paragraph{
-  width: 35%;
+  width: $columnWidth;
 }
 .contact-layout{
   display: flex;
