@@ -1,7 +1,7 @@
 <template>
   <div>
     <introduction />
-    <div
+    <section
       id="projects"
     >
       <paragraph
@@ -20,8 +20,8 @@
           :class="project.wider? 'project-element': ''"
         />
       </div>
-    </div>
-    <div
+    </section>
+    <section
       id="skills"
       class="skills-layout"
     >
@@ -34,8 +34,8 @@
         :name-section="'My skills'"
         :title="'Language & Tools'"
       />
-    </div>
-    <div
+    </section>
+    <section
       id="contact"
       class="contact-layout"
     >
@@ -47,7 +47,7 @@
         <contact-details />
       </paragraph>
       <email-form-contact />
-    </div>
+    </section>
     <div class="footer">
       <div class="logo">
         oskstr.

@@ -1,5 +1,5 @@
 <template>
-  <div class="introduction-wrapper">
+  <section class="introduction-wrapper">
     <div>
       <div class="welcome-text">
         Hello! I'm
@@ -22,7 +22,7 @@
       src="@/assets/images/j.jpg"
       class="image"
   >
-  </div>
+  </section>
 </template>
 
 <script>
