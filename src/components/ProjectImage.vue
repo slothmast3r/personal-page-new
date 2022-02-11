@@ -64,7 +64,7 @@ export default {
   background: white;
   position: absolute;
   background: $white_smoke;
-  bottom: 0;
+  bottom: 0.25em;
   visibility: hidden;
   width: 100%;
   height: 0;
