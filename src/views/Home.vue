@@ -26,7 +26,9 @@
         :name-section="'Contact me'"
         :title="'Drop me a message'"
         :description="'Feel free to contact me!'"
-      />
+      >
+        <contact-details></contact-details>
+      </paragraph>
       <email-form-contact></email-form-contact>
     </div>
   </div>
@@ -37,9 +39,10 @@ import Introduction from "@/components/Introduction";
 import Paragraph from "@/components/Paragraph";
 import ProjectImage from "@/components/ProjectImage";
 import EmailFormContact from "@/components/EmailContactForm";
+import ContactDetails from "../components/ContactDetails";
 export default {
   name: "Home",
-  components: {EmailFormContact, ProjectImage, Paragraph, Introduction},
+  components: {ContactDetails, EmailFormContact, ProjectImage, Paragraph, Introduction},
   data(){
     return {
       projectsData: [

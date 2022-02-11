@@ -49,7 +49,7 @@
           class="form-styles message"
           name="message"
           cols="30"
-          rows="7"
+          rows="12"
           :placeholder="'Message'"
         />
       </div>
@@ -163,6 +163,8 @@ label {
   backdrop-filter: blur(6.2px);
   -webkit-backdrop-filter: blur(6.2px);
   border: 1px solid rgba(255, 255, 255, 0.97);
+
+  font-family: 'Rubik', sans-serif;
   &.thick {
     height: 2.3em;
     width: calc(100% - 7em);
