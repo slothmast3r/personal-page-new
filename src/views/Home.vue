@@ -30,7 +30,7 @@
         :src="require('/src/assets/images/Techstack.png')"
       >
       <paragraph
-          class="left-paragraph"
+        class="left-paragraph"
         :name-section="'My skills'"
         :title="'Language & Tools'"
       />
@@ -47,6 +47,11 @@
         <contact-details />
       </paragraph>
       <email-form-contact />
+    </div>
+    <div class="footer">
+      <div class="logo">
+        oskstr.
+      </div>
     </div>
   </div>
 </template>
@@ -130,5 +135,16 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.footer{
+  .logo{
+    font-family: "Press Start 2P", cursive;
+    color: #3B0D11;
+    font-size: 2em;
+    background: linear-gradient(346deg, rgba(21,43,208,1) 0%, rgba(90,240,255,1) 86%);
+    -webkit-background-clip: text;
+    width: fit-content;
+    -webkit-text-fill-color: transparent;
+  }
 }
 </style>
