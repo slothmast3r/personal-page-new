@@ -1,7 +1,7 @@
 <template>
   <div class="paragraph-wrapper">
-    <div class="section-wrapper">
-      <div class="line-section" />
+    <div class="line-wrapper">
+      <div class="line" />
       <div class="section-text">
         {{ nameSection }}
       </div>
@@ -42,7 +42,7 @@ export default {
 
 <style scoped lang="scss">
 .paragraph-wrapper{
-  .section-wrapper {
+  .line-wrapper {
     display: flex;
     align-items: center;
     gap: 1em;
@@ -50,7 +50,7 @@ export default {
     font-size: 1.3em;
     margin: 0.6em 0;
 
-    .line-section {
+    .line {
       width: 4em;
       height: 0.2em;
       background: $secondary-color;
