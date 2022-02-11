@@ -4,6 +4,7 @@
       v-for="tab in tabs"
       :key="tab.id"
       class="tab-el"
+      @click="$router.push(`#${tab.id}`)"
     >
       {{ tab.name }}
     </div>

@@ -1,35 +1,51 @@
 <template>
   <div>
     <introduction />
-    <paragraph
-      :name-section="'My works'"
-      :title="'My recent projects'"
-    />
-    <div class="projects-layout">
-      <project-image
-        v-for="project in projectsData"
-        :key="project.key"
-        :img-src="project.image"
-        :overlay-title="project.title"
-        :overlay-description="project.description"
-        :class="project.wider? 'project-element': ''"
+    <div
+      id="projects"
+    >
+      <paragraph
+        :name-section="'My works'"
+        :title="'My recent projects'"
       />
+      <div
+        class="projects-layout"
+      >
+        <project-image
+          v-for="project in projectsData"
+          :key="project.key"
+          :img-src="project.image"
+          :overlay-title="project.title"
+          :overlay-description="project.description"
+          :class="project.wider? 'project-element': ''"
+        />
+      </div>
     </div>
-    <div>
+    <div
+      id="skills"
+      class="skills-layout"
+    >
+      <img
+        class="skills-image"
+        :src="require('/src/assets/images/Techstack.png')"
+      >
       <paragraph
         :name-section="'My skills'"
         :title="'Language & Tools'"
       />
     </div>
-    <div class="contact-layout">
+    <div
+      id="contact"
+      class="contact-layout"
+    >
       <paragraph
         :name-section="'Contact me'"
         :title="'Drop me a message'"
         :description="'Feel free to contact me!'"
       >
-        <contact-details></contact-details>
+        <contact-details />
       </paragraph>
-      <email-form-contact></email-form-contact>
+      <email-form-contact />
     </div>
   </div>
 </template>
@@ -93,6 +109,17 @@ export default {
   .project-element{
     grid-column: 2 / -1;
 
+  }
+}
+.tools-image{
+  width: 40em;
+}
+.skills-layout{
+  display: flex;
+  align-items: center;
+  .skills-image{
+    margin-right: 5em;
+    width: 40em;
   }
 }
 .contact-layout{
