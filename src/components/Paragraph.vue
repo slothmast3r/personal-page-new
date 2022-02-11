@@ -63,7 +63,7 @@ export default {
     font-size: 2em;
     color: $white-smoke;
     margin-top: 0.6em;
-    margin-bottom: 1.2em;
+    margin-bottom: 0.8em;
     font-weight: 700;
   }
   .description-wrapper{
