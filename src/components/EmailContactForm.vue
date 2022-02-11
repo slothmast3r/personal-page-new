@@ -84,7 +84,6 @@ export default {
       email: '',
       name: '',
       message:'',
-      subject: '',
     }
   },
   methods:{
@@ -123,8 +122,9 @@ export default {
   background: rgba(255, 255, 255, 0.15);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  padding: 20px;
+  padding: 1.5em 2.5em;
   display: flex;
+  width: 35%;
   flex-direction: column;
 
 }
@@ -157,7 +157,7 @@ label {
   width: 100%;
 }
 .form-styles{
-  border-radius: 0.25em;
+  border-radius: 0.75em;
   background: rgba(255, 255, 255, 0.78);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(6.2px);
@@ -176,7 +176,7 @@ label {
   }
   &:focus {
     background-color: #f2f6f8;
-    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
+    box-shadow: 0 7px 5px rgba(0, 0, 0, 0.11);
   }
   &.message{
     resize: vertical;
