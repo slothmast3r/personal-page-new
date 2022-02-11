@@ -118,6 +118,7 @@ export default {
 <style scoped lang="scss">
 
 .container {
+  box-sizing: border-box;
   border-radius: 1em;
   background: rgba(255, 255, 255, 0.15);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);

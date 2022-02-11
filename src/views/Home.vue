@@ -30,6 +30,7 @@
         :src="require('/src/assets/images/Techstack.png')"
       >
       <paragraph
+          class="left-paragraph"
         :name-section="'My skills'"
         :title="'Language & Tools'"
       />
@@ -117,10 +118,13 @@ export default {
 .skills-layout{
   display: flex;
   align-items: center;
+  justify-content: space-between;
   .skills-image{
-    margin-right: 5em;
     width: 40em;
   }
+}
+.left-paragraph{
+  width: 35%;
 }
 .contact-layout{
   display: flex;
