@@ -29,9 +29,9 @@
           for="email"
           class="d-block"
         >
-          <mail-icon
-            :width="20"
-            :height="20"
+          <mail2
+            :width="1.25"
+            :height="1.25"
             class="icon"
           /></label>
         <input
@@ -66,18 +66,18 @@
 <script>
 import emailjs from 'emailjs-com';
 import{ init } from 'emailjs-com';
-import UserIcon from '@/assets/images/person_ico'
-import MailIcon from '@/assets/images/mail'
+import UserIcon from '@/assets/icons/person_ico'
 import PersonalButton from "@/components/PersonalButton";
+import Mail2 from "../assets/icons/mail2";
 init("user_jFHRe62nkzTevWEmjtjml");
 
 
 export default {
   name: "EmailFormContact",
   components:{
+    Mail2,
     PersonalButton,
     UserIcon,
-    MailIcon
   },
   data(){
     return{
