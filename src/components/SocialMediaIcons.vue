@@ -1,5 +1,8 @@
 <template>
-  <div class="icons-wrapper">
+  <div
+    class="icons-wrapper"
+    :class="rotatedClass"
+  >
     <div
       v-for="icon in socialMediaWithUrl"
       :key="icon.key"
@@ -9,6 +12,7 @@
         :is="icon.image"
         width="2"
         height="2"
+        :class="rotatedClass"
         class="icon-image"
       />
     </div>
@@ -25,6 +29,12 @@ import youtube from "@/assets/icons/socialMedia/youtube";
 export default {
   name: "SocialMediaIcons",
   components: {frontendmentor, github, instagram, linkedin, youtube},
+  props:{
+    isRotated: {
+      type: Boolean,
+      default: false
+    }
+  },
   data(){
     return{
       socialMedia: [
@@ -59,7 +69,11 @@ export default {
   computed:{
     socialMediaWithUrl(){
       return this.socialMedia.filter( x=> x.url)
-    }
+    },
+    rotatedClass(){
+      console.log(this.isRotated)
+      return this.isRotated ? 'rotated': ''
+    },
   },
   methods:{
     openLink(url){
@@ -78,10 +92,17 @@ export default {
   &:hover{
     fill: $secondary-color;
   }
+  &.rotated{
+    transform: rotate(-90deg);
+  }
 }
 .icons-wrapper{
   display: flex;
+  width: fit-content;
   align-items: center;
   gap: 1em;
+  &.rotated{
+    flex-direction: column;
+  }
 }
 </style>

@@ -21,15 +21,19 @@
       alt="My photo"
       src="@/assets/images/j.jpg"
       class="image"
-  >
+    >
+    <div>
+      <social-media-icons is-rotated/>
+    </div>
   </section>
 </template>
 
 <script>
 import PersonalButton from "@/components/PersonalButton";
+import SocialMediaIcons from "./SocialMediaIcons";
 export default {
   name: "Introduction",
-  components: {PersonalButton}
+  components: {SocialMediaIcons, PersonalButton}
 }
 </script>
 
