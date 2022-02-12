@@ -73,7 +73,7 @@ export default {
 .icon-image{
   width: 2em;
   fill: rgba(white,0.4);
-  transition: 0.3s ease-in-out;
+  transition: 0.4s ease-in-out;
   cursor: pointer;
   &:hover{
     fill: $secondary-color;
