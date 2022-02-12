@@ -35,6 +35,11 @@ export default {
           image: 'linkedin',
           url: 'https://www.linkedin.com/in/oskar-straszynski-6460b3124/',
         },
+        {
+          key: 'youtube',
+          image: 'youtube',
+          url: 'https://www.youtube.com/channel/UCn8b7RiPxXo4cJuVLAOr8CA',
+        },
       ],
     }
   },
