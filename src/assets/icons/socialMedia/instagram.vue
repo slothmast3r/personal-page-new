@@ -12,11 +12,7 @@
     style="enable-background:new 0 0 32 32;"
     xml:space="preserve"
   >
-<!--    <style type="text/css">-->
-<!--      .st0{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}-->
-<!--      .st1{fill:none;stroke:#000000;stroke-width:2;}-->
-<!--      .st2{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}-->
-<!--    </style>-->
+
     <path
       class="st0"
       d="M23,31H9c-4.4,0-8-3.6-8-8V9c0-4.4,3.6-8,8-8h14c4.4,0,8,3.6,8,8v14C31,27.4,27.4,31,23,31z"
@@ -51,3 +47,8 @@ export default {
   }
 }
 </script>
+<style type="text/css">
+  .st0{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+  .st1{fill:none;stroke:#000000;stroke-width:2;}
+  .st2{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+</style>

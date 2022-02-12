@@ -1,13 +1,15 @@
 <template>
-  <div>
+  <div class="icons-wrapper">
     <div
       v-for="icon in socialMediaWithUrl"
       :key="icon.key"
+      @click="openLink(icon.url)"
     >
       <component
         :is="icon.image"
         width="2"
         height="2"
+        class="icon-image"
       />
     </div>
   </div>
@@ -34,7 +36,7 @@ export default {
         {
           key: 'github',
           image: 'github',
-          url: 'github.com/slothmast3r',
+          url: 'https://github.com/slothmast3r',
         },
         {
           key: 'frontendmentor',
@@ -58,6 +60,11 @@ export default {
     socialMediaWithUrl(){
       return this.socialMedia.filter( x=> x.url)
     }
+  },
+  methods:{
+    openLink(url){
+      window.open(url)
+    }
   }
 }
 </script>
@@ -65,6 +72,16 @@ export default {
 <style scoped lang="scss">
 .icon-image{
   width: 2em;
-  fill: #212529;
+  fill: rgba(white,0.4);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  &:hover{
+    fill: $secondary-color;
+  }
+}
+.icons-wrapper{
+  display: flex;
+  align-items: center;
+  gap: 1em;
 }
 </style>
