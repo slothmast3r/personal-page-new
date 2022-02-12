@@ -4,14 +4,25 @@
       v-for="icon in socialMediaWithUrl"
       :key="icon.key"
     >
-      {{ icon.key }}
+      <component
+        :is="icon.image"
+        width="2"
+        height="2"
+      />
     </div>
   </div>
 </template>
 
 <script>
+import frontendmentor from "@/assets/icons/socialMedia/frontendmentor";
+import github from "@/assets/icons/socialMedia/github";
+import instagram from "@/assets/icons/socialMedia/instagram";
+import linkedin from "@/assets/icons/socialMedia/linkedin";
+import youtube from "@/assets/icons/socialMedia/youtube";
+
 export default {
   name: "SocialMediaIcons",
+  components: {frontendmentor, github, instagram, linkedin, youtube},
   data(){
     return{
       socialMedia: [
@@ -51,6 +62,9 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style scoped lang="scss">
+.icon-image{
+  width: 2em;
+  fill: #212529;
+}
 </style>
