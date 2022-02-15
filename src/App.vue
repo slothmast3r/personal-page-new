@@ -8,36 +8,20 @@
         Resume
       </personal-button>
     </div>
-    <introduction />
-    <div class="section">
-      <paragraph
-        :name-section="'What I do?'"
-        :title="'Better design, \n Better experience'"
-        :description="description"
-      />
-      <ShiningBlocks
-        :title="'title'"
-        :description="description"
-      />
-    </div>
+    <router-view></router-view>
+
   </div>
 </template>
 
 <script>
 
-import Introduction from "@/components/Introduction";
 import NavBar from "@/components/NavBar";
 import PersonalButton from "@/components/PersonalButton";
-import Paragraph from "@/components/Paragraph";
-import ShiningBlocks from "@/components/ShiningBlocks";
 export default {
   name: 'App',
   components: {
-    ShiningBlocks,
-    Paragraph,
     PersonalButton,
     NavBar,
-    Introduction
   },
   data(){
     return{
