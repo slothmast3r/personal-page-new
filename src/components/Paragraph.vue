@@ -1,7 +1,7 @@
 <template>
   <div class="paragraph-wrapper">
-    <div class="section-wrapper">
-      <div class="line-section" />
+    <div class="line-wrapper">
+      <div class="line" />
       <div class="section-text">
         {{ nameSection }}
       </div>
@@ -42,17 +42,17 @@ export default {
 
 <style scoped lang="scss">
 .paragraph-wrapper{
-  .section-wrapper {
+  .line-wrapper {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 1em;
     text-transform: uppercase;
-    font-size: 1.3rem;
-    margin: 1rem 0;
+    font-size: 1.3em;
+    margin: 0.6em 0;
 
-    .line-section {
-      width: 4rem;
-      height: 0.2rem;
+    .line {
+      width: 4em;
+      height: 0.2em;
       background: $secondary-color;
     }
     .section-text{
@@ -60,13 +60,14 @@ export default {
     }
   }
   .title-wrapper{
-    font-size: 2rem;
+    font-size: 2em;
     color: $white-smoke;
-    margin: 1.5rem 0;
+    margin-top: 0.6em;
+    margin-bottom: 0.8em;
     font-weight: 700;
   }
   .description-wrapper{
-    line-height: 1.5rem;
+    line-height: 1.5em;
     opacity: 0.8;
   }
 

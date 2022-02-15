@@ -1,12 +1,13 @@
 <template>
   <div class="nav-wrapper">
-    <div
+    <nav
       v-for="tab in tabs"
       :key="tab.id"
       class="tab-el"
+      @click="$router.push(`#${tab.id}`)"
     >
       {{ tab.name }}
-    </div>
+    </nav>
   </div>
 </template>
 
@@ -26,12 +27,12 @@ export default {
 $animate: all 0.2s ease-in-out;
 .nav-wrapper {
   display: flex;
-  gap: 3rem;
+  gap: 3em;
   .tab-el {
     font-weight: 700;
     display: block;
     font-family: sans-serif;
-    font-size: 1rem;
+    font-size: 1em;
     color: $secondary-color;
     position: relative;
     width: fit-content;
@@ -43,7 +44,7 @@ $animate: all 0.2s ease-in-out;
       display: block;
       height: 2px;
       position: absolute;
-      bottom: -0.5rem;
+      bottom: -0.5em;
       width: 100%;
       left: 0;
       background-color: $secondary-color;

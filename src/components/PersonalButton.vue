@@ -3,7 +3,7 @@
     :ref="'refButton'"
     class="hover-button"
     :class="buttonType === 'primary' ? 'primary-personal-button' : 'secondary-personal-button'"
-    @click="$emit('click')"
+    @click="(e)=>$emit('click',e)"
   >
     <div class="slot-class">
       <slot />
@@ -60,11 +60,9 @@ export default {
     z-index: 0;
     width: 0;
     height: 0;
-
     border-radius: 100%;
     transform: translate(-50%, -50%);
     transition: width var(--time), padding-top var(--time);
-
   }
   .slot-class{
      position: relative;
@@ -81,9 +79,9 @@ export default {
   outline: inherit;
   font-weight: 700;
   background: $secondary-color;
-  padding: 0.8rem 1.6rem;
-  font-size: 1rem;
-  border-radius: 0.5rem;
+  padding: 0.8rem 1.6em;
+  font-size: 1em;
+  border-radius: 0.5em;
   //text-transform: uppercase;
   span{
     background: $white-smoke;
@@ -99,10 +97,10 @@ export default {
   outline: inherit;
   font-weight: 700;
   background: none;
-  padding: 0.8rem 1.6rem;
+  padding: 0.8rem 1.6em;
   border: 1px solid $secondary-color;
-  font-size: 1rem;
-  border-radius: 0.5rem;
+  font-size: 1em;
+  border-radius: 0.5em;
   //text-transform: uppercase;
   span{
     background: $secondary-color;
