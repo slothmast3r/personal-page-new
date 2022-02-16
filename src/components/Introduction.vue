@@ -17,13 +17,15 @@
         GET IN TOUCH
       </PersonalButton>
     </div>
-    <img
-      alt="My photo"
-      src="@/assets/images/j.jpg"
-      class="image"
-    >
-    <div>
-      <social-media-icons is-rotated/>
+    <div class="right-side">
+      <img
+        alt="My photo"
+        src="@/assets/images/j.jpg"
+        class="image"
+      >
+      <div class="social-media">
+        <social-media-icons is-rotated/>
+      </div>
     </div>
   </section>
 </template>
@@ -61,11 +63,16 @@ export default {
     margin-bottom: 4em;
   }
   .image{
-    width: $columnWidth;
     border-radius: 0 100px;
 
+    width: calc(100% - 4em);
     box-shadow: 4rem 4rem 4rem rgba(#2B302F, 0.3);
 
   }
+  .right-side{
+    display: flex;
+  width: $columnWidth;
+    justify-content: space-between;
+   }
 }
 </style>
