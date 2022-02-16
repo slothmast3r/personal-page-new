@@ -17,16 +17,24 @@
         GET IN TOUCH
       </PersonalButton>
     </div>
-    <div class="right-side">
+    <div
+      data-aos="fade-left"
+      class="right-side"
+    >
       <img
         alt="My photo"
         src="@/assets/images/j.jpg"
         class="image"
       >
       <div class="margin-objects">
-        <social-media-icons :image-width="'1.5'" is-rotated/>
-        <div class="line"></div>
-        <div class="rotated-text">Follow me - </div>
+        <social-media-icons
+          :image-width="'1.5'"
+          is-rotated
+        />
+        <div class="line" />
+        <div class="rotated-text">
+          Follow me -
+        </div>
       </div>
     </div>
   </section>

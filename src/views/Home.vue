@@ -13,6 +13,7 @@
       >
         <project-image
           v-for="project in projectsData"
+          data-aos="flip-up"
           :key="project.key"
           :img-src="project.image"
           :overlay-title="project.title"
@@ -27,6 +28,7 @@
     >
       <img
         class="skills-image"
+        data-aos="fade-right"
         :src="require('/src/assets/images/Techstack.png')"
       >
       <paragraph
@@ -46,7 +48,8 @@
       >
         <contact-details />
       </paragraph>
-      <email-form-contact />
+      <email-form-contact
+          data-aos="fade-left" />
     </section>
     <div class="footer">
       <div class="logo">
