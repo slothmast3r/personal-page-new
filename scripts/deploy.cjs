@@ -1,9 +1,7 @@
 // const execa = require("execa");
-const fs = require("fs");
-// import {execa} from 'execa';
-const { execa } = require("child_process");
-
-// import fs from "fs";
+// const fs = require("fs");
+import {execa} from 'execa';
+import fs from "fs";
 (async () => {
     try {
         await execa("git", ["checkout", "--orphan", "gh-pages"]);
