@@ -14,6 +14,9 @@
         height="2"
         :class="rotatedClass"
         class="icon-image"
+        :style="{
+          width: `${imageWidth}em`
+        }"
       />
     </div>
   </div>
@@ -33,7 +36,11 @@ export default {
     isRotated: {
       type: Boolean,
       default: false
-    }
+    },
+    imageWidth:{
+      default: '2',
+      type: String,
+    },
   },
   data(){
     return{
@@ -85,7 +92,6 @@ export default {
 
 <style scoped lang="scss">
 .icon-image{
-  width: 2em;
   fill: rgba(white,0.4);
   transition: 0.4s ease-in-out;
   cursor: pointer;

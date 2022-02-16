@@ -17,13 +17,17 @@
         GET IN TOUCH
       </PersonalButton>
     </div>
-    <img
-      alt="My photo"
-      src="@/assets/images/j.jpg"
-      class="image"
-    >
-    <div>
-      <social-media-icons is-rotated/>
+    <div class="right-side">
+      <img
+        alt="My photo"
+        src="@/assets/images/j.jpg"
+        class="image"
+      >
+      <div class="margin-objects">
+        <social-media-icons :image-width="'1.5'" is-rotated/>
+        <div class="line"></div>
+        <div class="rotated-text">Follow me - </div>
+      </div>
     </div>
   </section>
 </template>
@@ -60,12 +64,40 @@ export default {
     opacity: 0.8;
     margin-bottom: 4em;
   }
-  .image{
+  .right-side {
+
     width: $columnWidth;
-    border-radius: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    .image {
+      width: 85%;
+      border-radius: 0 100px;
 
-    box-shadow: 4rem 4rem 4rem rgba(#2B302F, 0.3);
+      box-shadow: 4rem 4rem 4rem rgba(#2B302F, 0.3);
 
+    }
+    .margin-objects{
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      .line{
+        width: 1px;
+        height: 2em;
+        background: rgba(white,0.7);
+        position: relative;
+        right: 0;
+      }
+      .rotated-text{
+        transform: rotate(-90deg);
+        display: block;
+        position: absolute;
+        bottom: 5em;
+        font-size: 1.2em;
+        left: -2em;
+        color: rgba(white, 0.7);
+        width: max-content;
+      }
+    }
   }
 }
 </style>
