@@ -1,6 +1,8 @@
 // const execa = require("execa");
 const fs = require("fs");
-import {execa} from 'execa';
+// import {execa} from 'execa';
+const { execa } = require("child_process");
+
 // import fs from "fs";
 (async () => {
     try {
