@@ -1,3 +1,6 @@
+import { createRequire } from 'module';
+const require = createRequire(import.meta.url);
+
 const execa = require("execa");
 const fs = require("fs");
 // import {execa} from "execa";
