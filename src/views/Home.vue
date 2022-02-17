@@ -1,6 +1,6 @@
 <template>
   <div>
-    <introduction />
+    <introduction id="home" />
     <section
       id="projects"
     >

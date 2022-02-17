@@ -1,6 +1,9 @@
 <template>
   <div>
-    <div class="main-nav-bar">
+    <div
+      id="navbar"
+      class="main-nav-bar"
+    >
       <nav-bar
         :tabs="mainTabs"
       />
@@ -8,7 +11,7 @@
         Resume
       </personal-button>
     </div>
-    <router-view />
+    <router-view class="main-wrapper" />
   </div>
 </template>
 
@@ -37,26 +40,60 @@ export default {
   },
   mounted() {
     AOS.init()
+    window.addEventListener('scroll',this.handleNavBar)
+  },
+  unmounted() {
+    window.removeEventListener('scroll',this.handleNavBar)
+  },
+  methods:{
+    handleNavBar(event){
+      if(window.scrollY > 20 ){
+        console.log(document.getElementById("navbar").classList)
+        document.getElementById("navbar").classList.add('scrolled')
+      }else{
+        document.getElementById("navbar").classList.remove('scrolled')
+      }
+    }
   }
 }
 </script>
 
 <style lang="scss">
 body{
+  margin: 0;
   background: $main-color;
   font-family: 'Rubik', sans-serif;
   color: $white-smoke;
-  margin: 2rem 6rem;
   font-size: 1rem;
+  //#TODO Because of the data-aos="fade-left" in Home.vue
+  overflow-x: hidden;
+
 }
 #app {
 
 }
+.main-wrapper{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 2rem 6rem;
+}
 .main-nav-bar {
+  background: $main-color;
+  position: fixed;
+  width: 100%;
+  top: 0;
   display: flex;
   align-items: center;
   justify-content: right;
   gap: 3rem;
+  z-index: 10;
+  padding: 2em 6em;
+  box-sizing: border-box;
+  transition: all 500ms ease-in-out;
+  &.scrolled{
+    padding: 0 6em;
+    box-shadow: 0 0.25em 0.25em rgba(black, 0.5);
+  }
 }
 .section{
   display: flex;
