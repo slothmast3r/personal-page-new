@@ -94,7 +94,7 @@ export default {
   align-items: center;
   justify-content: space-between;
   .skills-image{
-    width: 40em;
+    width: 45%;
   }
 }
 .left-paragraph{

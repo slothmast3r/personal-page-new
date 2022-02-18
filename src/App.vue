@@ -119,4 +119,11 @@ body{
     -webkit-text-fill-color: transparent;
   }
 }
+@media (max-width: 1300px) {
+  .main-wrapper{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 9rem 1.5rem 2rem 1.5rem;
+  }
+}
 </style>
