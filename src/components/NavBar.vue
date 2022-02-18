@@ -1,7 +1,7 @@
 <template>
   <nav class="nav-wrapper">
     <a
-      v-for="tab in tabs"
+      v-for="tab in $store.state.navTabs"
       :key="tab.id"
       class="tab-el"
       @click="$router.push(`/personal-page-new/#${tab.id}`)"
@@ -14,12 +14,6 @@
 <script>
 export default {
   name: "NavBar",
-  props:{
-    tabs:{
-      type: Array,
-      required: true,
-    }
-  }
 }
 </script>
 
