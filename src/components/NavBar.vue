@@ -1,59 +1,45 @@
 <template>
-  <nav class="nav-wrapper">
-    <a
-      v-for="tab in $store.state.navTabs"
-      :key="tab.id"
-      class="tab-el"
-      @click="$router.push(`/personal-page-new/#${tab.id}`)"
+  <div
+    id="navbar"
+    class="main-nav-bar"
+  >
+    <nav-elements></nav-elements>
+    <personal-button
+      is-position-fixed
+      :button-type="'secondary'"
     >
-      {{ tab.name }}
-    </a>
-  </nav>
+      Resume
+    </personal-button>
+  </div>
 </template>
 
 <script>
+import PersonalButton from "./PersonalButton.vue";
+import NavElements from "./NavElements.vue";
 export default {
   name: "NavBar",
+  components: {PersonalButton, NavElements}
 }
 </script>
 
 <style scoped lang="scss">
-$animate: all 0.2s ease-in-out;
-.nav-wrapper {
+
+.main-nav-bar {
+  background: $main-color;
+  position: fixed;
+  width: 100%;
+  top: 0;
   display: flex;
-  gap: 3em;
-  .tab-el {
-    font-weight: 700;
-    display: block;
-    font-family: sans-serif;
-    font-size: 1em;
-    color: $secondary-color;
-    position: relative;
-    width: fit-content;
-    transition: all .3s ease-in-out;
-    cursor: pointer;
-
-    &:before {
-      content: '';
-      display: block;
-      height: 2px;
-      position: absolute;
-      bottom: -0.5em;
-      width: 100%;
-      left: 0;
-      background-color: $secondary-color;
-      transform: scaleX(0);
-      transition: all .3s ease-in-out;
-      transform-origin: bottom left;
-    }
-
-    &:hover {
-      color: $secondary-color;
-
-      &:before {
-        transform: scaleX(1);
-      }
-    }
+  align-items: center;
+  justify-content: right;
+  gap: 3rem;
+  z-index: 10;
+  padding: 2em 6em;
+  box-sizing: border-box;
+  transition: all 500ms ease-in-out;
+  &.scrolled{
+    padding: 0 6em;
+    box-shadow: 0 0.25em 0.25em rgba(black, 0.5);
   }
 }
 </style>

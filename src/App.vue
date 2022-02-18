@@ -1,17 +1,6 @@
 <template>
   <div id="home">
-    <div
-      id="navbar"
-      class="main-nav-bar"
-    >
-      <nav-bar />
-      <personal-button
-        is-position-fixed
-        :button-type="'secondary'"
-      >
-        Resume
-      </personal-button>
-    </div>
+    <nav-bar />
     <router-view class="main-wrapper" />
     <div class="footer">
       <div class="logo">
@@ -24,17 +13,15 @@
 
 <script>
 
-import NavBar from "@/components/NavBar";
-import PersonalButton from "@/components/PersonalButton";
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import SocialMediaIcons from "./components/SocialMediaIcons.vue";
+import NavBar from "./components/NavBar.vue";
 export default {
   name: 'App',
   components: {
-    SocialMediaIcons,
-    PersonalButton,
     NavBar,
+    SocialMediaIcons,
   },
   mounted() {
     AOS.init()
@@ -73,24 +60,6 @@ body{
   width: 100%;
   box-sizing: border-box;
   padding: 9rem 6rem 2rem 6rem;
-}
-.main-nav-bar {
-  background: $main-color;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  display: flex;
-  align-items: center;
-  justify-content: right;
-  gap: 3rem;
-  z-index: 10;
-  padding: 2em 6em;
-  box-sizing: border-box;
-  transition: all 500ms ease-in-out;
-  &.scrolled{
-    padding: 0 6em;
-    box-shadow: 0 0.25em 0.25em rgba(black, 0.5);
-  }
 }
 .section{
   display: flex;
