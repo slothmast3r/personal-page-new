@@ -1,14 +1,14 @@
 <template>
-  <div class="nav-wrapper">
-    <nav
+  <nav class="nav-wrapper">
+    <a
       v-for="tab in tabs"
       :key="tab.id"
       class="tab-el"
       @click="$router.push(`/personal-page-new/#${tab.id}`)"
     >
       {{ tab.name }}
-    </nav>
-  </div>
+    </a>
+  </nav>
 </template>
 
 <script>
