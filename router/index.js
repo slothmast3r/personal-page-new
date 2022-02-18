@@ -1,8 +1,10 @@
 import {createRouter, createWebHistory} from "vue-router";
 import Home from "@/views/Home";
+import ProjectDetails from "@/views/ProjectDetails.vue";
 
 const routes = [
     { path: `/personal-page-new/`, component: Home },
+    { path: `/personal-page-new/project/:key`, component: ProjectDetails },
 ]
 
 // 3. Create the router instance and pass the `routes` option

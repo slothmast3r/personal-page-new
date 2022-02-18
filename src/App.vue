@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="home">
     <div
       id="navbar"
       class="main-nav-bar"
@@ -48,7 +48,6 @@ export default {
   methods:{
     handleNavBar(event){
       if(window.scrollY > 20 ){
-        console.log(document.getElementById("navbar").classList)
         document.getElementById("navbar").classList.add('scrolled')
       }else{
         document.getElementById("navbar").classList.remove('scrolled')

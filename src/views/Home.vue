@@ -1,6 +1,6 @@
 <template>
   <div>
-    <introduction id="home" />
+    <introduction />
     <section
       id="projects"
     >
@@ -13,9 +13,10 @@
       >
         <project-image
           v-for="project in projectsData"
-          data-aos="flip-up"
           :key="project.key"
+          data-aos="flip-up"
           :img-src="project.image"
+          @click="$router.push(`/personal-page-new/project/${project.key}`)"
           :overlay-title="project.title"
           :overlay-description="project.description"
           :class="project.wider? 'project-element': ''"
@@ -49,13 +50,14 @@
         <contact-details />
       </paragraph>
       <email-form-contact
-          data-aos="fade-left" />
+        data-aos="fade-left"
+      />
     </section>
     <div class="footer">
       <div class="logo">
         oskstr.
       </div>
-      <social-media-icons/>
+      <social-media-icons />
     </div>
   </div>
 </template>

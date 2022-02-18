@@ -4,7 +4,7 @@
       v-for="tab in tabs"
       :key="tab.id"
       class="tab-el"
-      @click="$router.push(`#${tab.id}`)"
+      @click="$router.push(`/personal-page-new/#${tab.id}`)"
     >
       {{ tab.name }}
     </nav>
