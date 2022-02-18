@@ -12,14 +12,14 @@
         class="projects-layout"
       >
         <project-image
-          v-for="project in projectsData"
+          v-for="project in $store.state.myProjects"
           :key="project.key"
           data-aos="flip-up"
           :img-src="project.image"
-          @click="$router.push(`/personal-page-new/project/${project.key}`)"
           :overlay-title="project.title"
           :overlay-description="project.description"
           :class="project.wider? 'project-element': ''"
+          @click="$router.push(`/personal-page-new/project/${project.key}`)"
         />
       </div>
     </section>
@@ -74,39 +74,7 @@ export default {
   components: {SocialMediaIcons, ContactDetails, EmailFormContact, ProjectImage, Paragraph, Introduction},
   data(){
     return {
-      projectsData: [
-        {
-          key: 'nft-frontend',
-          description: 'Frontendmentor.io challenge',
-          title: 'NFT Component',
-          image: require('@/assets/images/projects/nft.png')
-        },
-        {
-          key: 'comment-section',
-          description: 'Frontendmentor.io challenge',
-          title: 'Interactive Comment section',
-          image: require('@/assets/images/projects/commentSection.png')
-        },
-        {
-          key: 'rest-countries',
-          description: 'Frontendmentor.io challenge',
-          title: 'RESTFUL countries with api',
-          image: require('@/assets/images/projects/restCountries.png')
-        },
-        {
-          key: 'qr-code',
-          description: 'Frontendmentor.io challenge',
-          title: 'QR-code component',
-          image: require('@/assets/images/projects/qrCode.png')
-        },
-        {
-          key: 'clavo',
-          description: 'Simplified team member availability',
-          title: 'CLAVO',
-          image: require('@/assets/images/projects/clavo.svg'),
-          wider: true
-        },
-      ]
+
     }
   },
 }
