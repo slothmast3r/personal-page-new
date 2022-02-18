@@ -53,7 +53,6 @@ export default {
 .introduction-wrapper {
   display: flex;
   justify-content: space-between;
-  margin-top: 5em;
   .welcome-text {
     font-weight: 400;
     font-size: 1.5em;

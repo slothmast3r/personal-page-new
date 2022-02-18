@@ -8,6 +8,7 @@
 export default {
   name: "ProjectDetails",
   mounted() {
+    console.log(this.$store.state.count)
   }
 }
 </script>

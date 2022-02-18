@@ -19,6 +19,10 @@ export default {
     buttonType:{
       type: String,
       default: 'primary',
+    },
+    isPositionFixed:{
+      type: Boolean,
+      default: false,
     }
   },
   emits: ['click'],
@@ -26,13 +30,19 @@ export default {
     const element = this.$refs.refButton
     const spanEl = element.querySelector("span")
     element.addEventListener("mouseover", e => {
-      spanEl.style.left = e.pageX - element.offsetLeft + "px";
-      spanEl.style.top = e.pageY - element.offsetTop + "px";
+      let mouseX = this.isPositionFixed ? e.clientX : e.pageX
+      let mouseY = this.isPositionFixed ? e.clientY : e.pageY
+
+      spanEl.style.left = mouseX - element.offsetLeft + "px";
+      spanEl.style.top = mouseY - element.offsetTop + "px";
       element.classList.add("mouse-in");
     })
     element.addEventListener("mouseout", e => {
-      spanEl.style.left = e.pageX - element.offsetLeft + "px";
-      spanEl.style.top = e.pageY - element.offsetTop + "px";
+      let mouseX = this.isPositionFixed ? e.clientX : e.pageX
+      let mouseY = this.isPositionFixed ? e.clientY : e.pageY
+
+      spanEl.style.left = mouseX - element.offsetLeft + "px";
+      spanEl.style.top = mouseY - element.offsetTop + "px";
       element.classList.remove("mouse-in");
 
     });

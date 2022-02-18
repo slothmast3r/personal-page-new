@@ -7,7 +7,10 @@
       <nav-bar
         :tabs="mainTabs"
       />
-      <personal-button :button-type="'secondary'">
+      <personal-button
+        is-position-fixed
+        :button-type="'secondary'"
+      >
         Resume
       </personal-button>
     </div>
@@ -74,7 +77,7 @@ body{
 .main-wrapper{
   width: 100%;
   box-sizing: border-box;
-  padding: 2rem 6rem;
+  padding: 7rem 6rem 2rem 6rem;
 }
 .main-nav-bar {
   background: $main-color;
