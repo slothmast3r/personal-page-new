@@ -15,6 +15,12 @@
       </personal-button>
     </div>
     <router-view class="main-wrapper" />
+    <div class="footer">
+      <div class="logo">
+        oskstr.
+      </div>
+      <social-media-icons />
+    </div>
   </div>
 </template>
 
@@ -24,9 +30,11 @@ import NavBar from "@/components/NavBar";
 import PersonalButton from "@/components/PersonalButton";
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import SocialMediaIcons from "./components/SocialMediaIcons.vue";
 export default {
   name: 'App',
   components: {
+    SocialMediaIcons,
     PersonalButton,
     NavBar,
   },
@@ -77,7 +85,7 @@ body{
 .main-wrapper{
   width: 100%;
   box-sizing: border-box;
-  padding: 7rem 6rem 2rem 6rem;
+  padding: 9rem 6rem 2rem 6rem;
 }
 .main-nav-bar {
   background: $main-color;
@@ -99,5 +107,16 @@ body{
 }
 .section{
   display: flex;
+}
+.footer{
+  .logo{
+    font-family: "Press Start 2P", cursive;
+    color: #3B0D11;
+    font-size: 2em;
+    background: linear-gradient(346deg, rgba(#3B0D11,1) 0%, rgba(#9c0606,1) 86%);
+    -webkit-background-clip: text;
+    width: fit-content;
+    -webkit-text-fill-color: transparent;
+  }
 }
 </style>

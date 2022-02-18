@@ -53,12 +53,7 @@
         data-aos="fade-left"
       />
     </section>
-    <div class="footer">
-      <div class="logo">
-        oskstr.
-      </div>
-      <social-media-icons />
-    </div>
+
   </div>
 </template>
 
@@ -68,10 +63,9 @@ import Paragraph from "@/components/Paragraph";
 import ProjectImage from "@/components/ProjectImage";
 import EmailFormContact from "@/components/EmailContactForm";
 import ContactDetails from "../components/ContactDetails";
-import SocialMediaIcons from "../components/SocialMediaIcons";
 export default {
   name: "Home",
-  components: {SocialMediaIcons, ContactDetails, EmailFormContact, ProjectImage, Paragraph, Introduction},
+  components: { ContactDetails, EmailFormContact, ProjectImage, Paragraph, Introduction },
   data(){
     return {
 
@@ -111,15 +105,5 @@ export default {
   justify-content: space-between;
   align-items: center;
 }
-.footer{
-  .logo{
-    font-family: "Press Start 2P", cursive;
-    color: #3B0D11;
-    font-size: 2em;
-    background: linear-gradient(346deg, rgba(21,43,208,1) 0%, rgba(90,240,255,1) 86%);
-    -webkit-background-clip: text;
-    width: fit-content;
-    -webkit-text-fill-color: transparent;
-  }
-}
+
 </style>
