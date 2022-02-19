@@ -50,6 +50,7 @@
         <contact-details />
       </paragraph>
       <email-form-contact
+          class="email-form"
         data-aos="fade-left"
       />
     </section>
@@ -104,6 +105,10 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  .email-form{
+    width: $columnWidth;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -119,6 +124,11 @@ export default {
       width: 100%;
     }
     margin-bottom: 2em;
+  }
+  .contact-layout {
+    .email-form {
+      width: 100%;
+    }
   }
 }
 </style>
