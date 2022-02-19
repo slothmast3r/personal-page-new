@@ -106,4 +106,19 @@ export default {
   align-items: center;
 }
 
+@media screen and (max-width: 700px) {
+  section{
+    flex-direction: column;
+  }
+  .left-paragraph{
+    width: 100%;
+  }
+  .skills-layout{
+    flex-direction: column-reverse;
+    .skills-image{
+      width: 100%;
+    }
+    margin-bottom: 2em;
+  }
+}
 </style>
