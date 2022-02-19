@@ -1,6 +1,6 @@
 <template>
   <section class="introduction-wrapper">
-    <div>
+    <div class="left-side">
       <div class="welcome-text">
         Hello! I'm
       </div>
@@ -103,6 +103,34 @@ export default {
         left: -2em;
         color: rgba(white, 0.7);
         width: max-content;
+      }
+    }
+  }
+  @media screen and (max-width: 850px) {
+    .right-side{
+      display: none;
+    }
+  }
+  @media screen and (max-width: 650px) {
+    .left-side{
+      text-align: center;
+      margin-bottom: 1.75em;
+      width: 100%;
+      //display: flex;
+      //justify-content: center;
+      //flex-direction: column;
+      .welcome-text {
+        font-size: 1em;
+      }
+      .name-text{
+        justify-self: center;
+        font-size: 1.75em;
+        text-wrap: normal;
+        margin: 0.75em 0 ;
+      }
+      .jobtitle-text{
+        font-size: 1.25em;
+        margin-bottom: 1.25em;
       }
     }
   }
