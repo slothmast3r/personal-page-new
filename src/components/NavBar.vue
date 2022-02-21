@@ -118,7 +118,7 @@ export default {
 }
 .nav-bar-mobile{
   top: 0;
-  position: fixed;
+  position: sticky;
   z-index: 10;
   width: 100%;
   background: rgba($secondary-color, 0.8);
