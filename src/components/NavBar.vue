@@ -68,6 +68,7 @@ export default {
   }
 }
 #nav-toggle {
+  z-index: 10;
   position: absolute;
   cursor: pointer;
   padding: 1em 2em 1em 0em;
@@ -116,7 +117,11 @@ export default {
   }
 }
 .nav-bar-mobile{
-  position: sticky;
   top: 0;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  background: rgba($secondary-color, 0.8);
+  height: 5em;
 }
 </style>
