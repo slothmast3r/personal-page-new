@@ -1,5 +1,6 @@
 <template>
   <div
+    v-if="!isMobile"
     id="navbar"
     class="main-nav-bar"
   >
@@ -10,6 +11,12 @@
     >
       Resume
     </personal-button>
+  </div>
+  <div
+    v-else
+    class="nav-bar-mobile"
+    id="navbar"
+  >
     <div
       id="nav-toggle"
       @click="toggleActiveClass"
@@ -25,6 +32,12 @@ import NavElements from "./NavElements.vue";
 export default {
   name: "NavBar",
   components: {PersonalButton, NavElements},
+  computed:{
+    isMobile(){
+      return window.screen.width <= 850
+    }
+  },
+
   methods:{
     toggleActiveClass(){
       const navToggle = document.getElementById('nav-toggle')
@@ -55,34 +68,44 @@ export default {
   }
 }
 #nav-toggle {
-  display: none;
   position: absolute;
   cursor: pointer;
-  padding: 1em 2em 1em 0;
+  padding: 1em 2em 1em 0em;
+  background: $secondary-color;
+  top: 1em;
+  width: 1em;
+  height: 1em;
+  left: 1em;
+  border-radius: 2em;
+  $linePosition: 0.5em;
   span,
   span:before,
   span:after {
     cursor: pointer;
     border-radius: 0.125em;
-    height: 5px;
-    width: 35px;
+    height: 0.3em;
+    width: 2em;
     background: white;
     position: absolute;
     display: block;
     content: '';
+    top: $linePosition;
+    left: 0.5em;
     transition: all 300ms ease-in-out;
   }
   span:before {
-    top: -0.625em;
+    top: calc(0.25em + $linePosition);
+    left: 0;
   }
   span:after {
-    bottom: -0.625em;;
+    top: calc(1em + $linePosition);
+    left: 0;
   }
   &.active span {
     background-color: transparent;
     &:before,
     &:after {
-      top: 0;
+      top: calc(0.25em + $linePosition);
     }
     &:before {
       transform: rotate(45deg);
@@ -91,5 +114,9 @@ export default {
       transform: rotate(-45deg);
     }
   }
+}
+.nav-bar-mobile{
+  position: sticky;
+  top: 0;
 }
 </style>

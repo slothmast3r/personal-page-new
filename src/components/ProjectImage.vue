@@ -7,7 +7,7 @@
         :alt="'ProjectPhoto: ' + overlayTitle"
         :style="{
           width: '100%',
-          height: photoHeight * 27 + 'vw'
+          height: iconHeight
         }"
       >
       <div class="overlay__hover">
@@ -41,8 +41,19 @@ export default {
     imgSrc:{
       default: undefined,
       type: String
+    },
+    clavo:{
+      default: false,
+      type: Boolean
     }
 
+  },
+  computed:{
+    iconHeight(){
+      let isClavoHeight = this.clavo ? this.photoHeight * 27 + 'vw' : ''
+      let height =  window.screen.width > 850 ? this.photoHeight * 27 + 'vw' : isClavoHeight
+      return height
+    },
   },
 }
 </script>

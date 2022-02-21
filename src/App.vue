@@ -79,7 +79,7 @@ body{
   .main-wrapper{
     width: 100%;
     box-sizing: border-box;
-    padding: 9rem 1.5rem 2rem 1.5rem;
+    padding: 4rem 1.5rem 2rem 1.5rem;
   }
 }
 </style>

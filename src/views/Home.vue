@@ -18,6 +18,7 @@
           :img-src="project.image"
           :overlay-title="project.title"
           :overlay-description="project.description"
+          :clavo="project.wider"
           :class="project.wider? 'project-element': ''"
           @click="$router.push(`/personal-page-new/project/${project.key}`)"
         />
@@ -50,7 +51,7 @@
         <contact-details />
       </paragraph>
       <email-form-contact
-          class="email-form"
+        class="email-form"
         data-aos="fade-left"
       />
     </section>
@@ -126,9 +127,18 @@ export default {
     margin-bottom: 2em;
   }
   .contact-layout {
+    align-items: flex-start;
     .email-form {
       width: 100%;
     }
+  }
+}
+@media screen and (max-width: 850px) {
+  .projects-layout{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+
   }
 }
 </style>
