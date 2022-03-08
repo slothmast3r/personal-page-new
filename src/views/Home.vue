@@ -17,7 +17,7 @@
           data-aos="flip-up"
           :img-src="project.image"
           :overlay-title="project.title"
-          :overlay-description="project.description"
+          :overlay-description="project.shortDescription"
           :clavo="project.wider"
           :class="project.wider? 'project-element': ''"
           @click="$router.push(`/personal-page-new/project/${project.key}`)"

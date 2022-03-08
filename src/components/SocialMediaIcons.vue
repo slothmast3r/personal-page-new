@@ -78,7 +78,6 @@ export default {
       return this.socialMedia.filter( x=> x.url)
     },
     rotatedClass(){
-      console.log(this.isRotated)
       return this.isRotated ? 'rotated': ''
     },
   },
