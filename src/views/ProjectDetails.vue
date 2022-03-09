@@ -1,19 +1,26 @@
 <template>
   <div>
     <div class="project-title--wrapper">
-      <div class="project-title--text">Project Details</div>
+      <div class="project-title--text">
+        Project Details
+      </div>
       <div class="project-subtitle--subtext">
         <div class="line" />
         <div>Portfolio/Portfolio details</div>
       </div>
     </div>
     <div class="project-content--wrapper">
-      <img :src="currentProject.image" :alt="`${currentProject.title} image`" />
+      <img
+        :src="currentProject.image"
+        :alt="`${currentProject.title} image`"
+      >
       <div>
-        <div class="project-title--text">{{ currentProject.title }}</div>
+        <div class="project-title--text">
+          {{ currentProject.title }}
+        </div>
         <div class="project-description--text">
           {{ $store.state.description }}
-
+          <a href="https://drive.google.com/uc?export=download&id=1jd-WmlEgXXm9DOH5Ftq6EqK3z1mzjChK">DOWNLOAD</a>
         </div>
       </div>
     </div>
