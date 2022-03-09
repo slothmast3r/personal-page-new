@@ -20,7 +20,6 @@
         </div>
         <div class="project-description--text">
           {{ $store.state.description }}
-          <a href="https://drive.google.com/uc?export=download&id=1jd-WmlEgXXm9DOH5Ftq6EqK3z1mzjChK">DOWNLOAD</a>
         </div>
       </div>
     </div>

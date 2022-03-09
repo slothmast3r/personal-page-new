@@ -8,6 +8,7 @@
     <personal-button
       is-position-fixed
       :button-type="'secondary'"
+      @click="downloadCV"
     >
       Resume
     </personal-button>
@@ -39,6 +40,9 @@ export default {
   },
 
   methods:{
+    downloadCV(){
+      window.location = 'https://drive.google.com/uc?export=download&id=1jd-WmlEgXXm9DOH5Ftq6EqK3z1mzjChK'
+    },
     toggleActiveClass(){
       const navToggle = document.getElementById('nav-toggle')
       navToggle.classList.toggle('active')
