@@ -79,6 +79,7 @@ export default {
   img {
     background: white;
     width: 100%;
+    height: 100%;
   }
   .project-title--text {
     border-bottom: 0.1em solid $secondary-color;

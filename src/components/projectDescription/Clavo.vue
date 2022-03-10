@@ -20,6 +20,7 @@
         Optimizing already existing code
       </li>
     </ul>
+    <strong>Duration:</strong> 1 year (10.2020 - 10.2021)
   </div>
 </template>
 
