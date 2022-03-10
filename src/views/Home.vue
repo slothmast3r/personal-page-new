@@ -36,7 +36,7 @@
       <paragraph
         class="left-paragraph"
         :name-section="'My skills'"
-        :title="'Language & Tools'"
+        :title="'Languages & Tools'"
       />
     </section>
     <section
