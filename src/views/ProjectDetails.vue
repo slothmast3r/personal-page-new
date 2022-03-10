@@ -18,8 +18,11 @@
         <div class="project-title--text">
           {{ currentProject.title }}
         </div>
-        <div class="project-description--text">
-          {{ $store.state.description }}
+        <div
+          v-if="currentProject.component"
+          class="project-description--text"
+        >
+          <component :is="currentProject.component" />
         </div>
       </div>
     </div>
@@ -27,8 +30,14 @@
 </template>
 
 <script>
+import NFTComponent from "@/components/projectDescription/NFTComponent.vue";
+import CommentSection from "@/components/projectDescription/CommentSection.vue";
+import RestCountries from "@/components/projectDescription/RestCountries.vue";
+import QRCodeComponent from "@/components/projectDescription/QRCodeComponent.vue";
+import Clavo from "@/components/projectDescription/Clavo.vue";
 export default {
   name: "ProjectDetails",
+  components: { NFTComponent, CommentSection, RestCountries, QRCodeComponent, Clavo },
   computed: {
     currentProject() {
       return this.$store.state.myProjects.find(

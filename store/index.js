@@ -10,32 +10,37 @@ export const store = createStore({
                 key: 'nft-frontend',
                 shortDescription: 'Frontendmentor.io challenge',
                 title: 'NFT Component',
-                image: require('@/assets/images/projects/nft.png')
+                image: require('@/assets/images/projects/nft.png'),
+                component: 'NFTComponent'
             },
             {
                 key: 'comment-section',
                 shortDescription: 'Frontendmentor.io challenge',
                 title: 'Interactive Comment section',
-                image: require('@/assets/images/projects/commentSection.png')
+                image: require('@/assets/images/projects/commentSection.png'),
+                component: 'CommentSection'
             },
             {
                 key: 'rest-countries',
                 shortDescription: 'Frontendmentor.io challenge',
                 title: 'RESTFUL countries with api',
-                image: require('@/assets/images/projects/restCountries.png')
+                image: require('@/assets/images/projects/restCountries.png'),
+                component: 'RestCountries'
             },
             {
                 key: 'qr-code',
                 shortDescription: 'Frontendmentor.io challenge',
                 title: 'QR-code component',
-                image: require('@/assets/images/projects/qrCode.png')
+                image: require('@/assets/images/projects/qrCode.png'),
+                component: 'QRCodeComponent'
             },
             {
                 key: 'clavo',
                 shortDescription: 'Simplified team member availability',
                 title: 'CLAVO',
                 image: require('@/assets/images/projects/clavo.svg'),
-                wider: true
+                wider: true,
+                component: 'Clavo'
             },
         ],
             navTabs : [
