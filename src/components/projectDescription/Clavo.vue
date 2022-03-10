@@ -18,7 +18,7 @@
         Taking care of high-quality code
       </li> <li>
         Optimizing already existing code
-      </li> <li />
+      </li>
     </ul>
   </div>
 </template>
