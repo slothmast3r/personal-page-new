@@ -47,7 +47,7 @@ export default {
     align-items: center;
     gap: 1em;
     text-transform: uppercase;
-    font-size: 1.3em;
+    font-size: 1.5em;
     margin: 0.6em 0;
 
     .line {
@@ -60,16 +60,31 @@ export default {
     }
   }
   .title-wrapper{
-    font-size: 2em;
+    font-size: 4.2em;
     color: $white-smoke;
-    margin-top: 0.6em;
-    margin-bottom: 0.8em;
+    margin-bottom: 0.4em;
     font-weight: 700;
   }
   .description-wrapper{
     line-height: 1.5em;
+    font-size: 1.3em;
     opacity: 0.8;
   }
 
 }
+@media screen and (max-width: 850px) {
+
+  .paragraph-wrapper{
+  .line-wrapper{
+    font-size: 1.3em;
+  }
+  .title-wrapper{
+    margin-top: 0.8em;
+    font-size: 2em;
+    margin-bottom: 0.8em;
+  }
+    .description-wrapper{
+      font-size: 1em;
+    }
+}}
 </style>
