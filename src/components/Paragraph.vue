@@ -16,38 +16,38 @@
         {{ description }}
       </div>
     </div>
-    <slot/>
+    <slot />
   </div>
 </template>
 
 <script>
 export default {
   name: "Paragraph",
-  props:{
-    title:{
+  props: {
+    title: {
       type: String,
-      default: '',
+      default: "",
     },
-    nameSection:{
+    nameSection: {
       type: String,
-      required: true
+      required: true,
     },
-    description:{
+    description: {
       type: String,
-      default: '',
-    }
-  }
-}
+      default: "",
+    },
+  },
+};
 </script>
 
 <style scoped lang="scss">
-.paragraph-wrapper{
+.paragraph-wrapper {
   .line-wrapper {
     display: flex;
     align-items: center;
     gap: 1em;
     text-transform: uppercase;
-    font-size: 1.5em;
+    font-size: 1.3em;
     margin: 0.6em 0;
 
     .line {
@@ -55,36 +55,20 @@ export default {
       height: 0.2em;
       background: $secondary-color;
     }
-    .section-text{
+    .section-text {
       opacity: 0.8;
     }
   }
-  .title-wrapper{
-    font-size: 4.2em;
+  .title-wrapper {
+    font-size: 2em;
     color: $white-smoke;
-    margin-bottom: 0.4em;
+    margin-top: 0.6em;
+    margin-bottom: 0.8em;
     font-weight: 700;
   }
-  .description-wrapper{
+  .description-wrapper {
     line-height: 1.5em;
-    font-size: 1.3em;
     opacity: 0.8;
   }
-
 }
-@media screen and (max-width: 850px) {
-
-  .paragraph-wrapper{
-  .line-wrapper{
-    font-size: 1.3em;
-  }
-  .title-wrapper{
-    margin-top: 0.8em;
-    font-size: 2em;
-    margin-bottom: 0.8em;
-  }
-    .description-wrapper{
-      font-size: 1em;
-    }
-}}
 </style>
